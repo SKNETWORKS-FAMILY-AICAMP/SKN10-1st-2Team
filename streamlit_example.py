@@ -1,7 +1,18 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import streamlit as st
+import matplotlib.pyplot as plt
+import streamlit as st
+from matplotlib import font_manager
 
+# 한글 폰트 설정 (Windows의 경우)
+font_path = 'C:/Windows/Fonts/malgun.ttf'  # 윈도우에서는 'malgun.ttf' 폰트를 사용
+font_prop = font_manager.FontProperties(fname=font_path)
+plt.rcParams['font.family'] = font_prop.get_name()
+
+#탭 표시 꾸미기
+st.set_page_config(page_title="전국 자동차 현황", page_icon="🚗")
 st.title("전국 자동차 현황")
 
 option = st.radio(
@@ -37,7 +48,26 @@ elif option == "용도별" :
     st.bar_chart(df.set_index('year'))
 
 elif option == "시/군별" :
-    pass
+    #matplotlib은 한국어 라벨을 지원하지 않기 때문에 한글폰트 설정을 따로 해야된다.
+    #9줄에 한글 폰트 설정 참고
+    data = {
+    '광주': 10,
+    '대구': 20,
+    '부산': 30,
+    '서울': 40
+    }
 
+    # Pie chart 그리기
+    labels = data.keys()
+    sizes = data.values()
+
+    fig, ax = plt.subplots()
+    # sizes : 데이터 입력값, autopct : 값 표현방식, startangle : 시작할 각도, colors : 색깔지정
+    ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90, colors=['#ff9999','#66b3ff','#99ff99','#ffcc99'])
+    #ax.axis('equal')는 matplotlib에서 축의 비율을 동일하게 설정하는 명령어
+    ax.axis('equal')  
+
+    # Streamlit에 차트 표시
+    st.pyplot(fig)
 
 
