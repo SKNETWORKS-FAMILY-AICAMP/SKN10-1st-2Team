@@ -113,22 +113,36 @@ if month:
         # 지역별 데이터 트렌드
         elif page == "지역별 데이터 트렌드":
             st.title("📈 지역별 데이터 트렌드")
-            province = st.selectbox("특정 시도의 데이터를 선택하세요:", df['province'].unique())
-            district_options = ["전체"] + df[df['province'] == province]['district'].dropna().unique().tolist()
-            district = st.selectbox("시군구를 선택하세요:", district_options)
-            selected_district = None if district == "전체" else district
-
+            
+            # 특정 시도의 데이터를 선택하세요
+            province = st.selectbox("특정 시도의 데이터를 선택하세요:", df['province'].unique(), key="trend_province")
+            
             if province:
-                monthly_data = get_monthly_data(province, district=selected_district)
-                fig_trend = px.line(
-                    monthly_data,
-                    x='월',
-                    y=['총_승용차', '총_승합차', '총_화물차', '총_특수차'],
-                    title=f"{province} {district if district else ''} 월별 차량 데이터 변화",
-                    labels={'value': '등록 대수', 'variable': '차량 유형'},
-                    height=600
+                # 시군구 선택
+                district_options = ["전체"] + df[df['province'] == province]['district'].dropna().unique().tolist()
+                district = st.selectbox(
+                    "시군구를 선택하세요:", 
+                    district_options, 
+                    key=f"trend_district_{province}"  # 각 시도에 대해 고유 키 설정
                 )
-                st.plotly_chart(fig_trend)
+                selected_district = None if district == "전체" else district
+
+                # 데이터 가져오기
+                monthly_data = get_monthly_data(province, district=selected_district)
+
+                # 데이터가 존재하는 경우 그래프 생성
+                if not monthly_data.empty:
+                    fig_trend = px.line(
+                        monthly_data,
+                        x='월',
+                        y=['총_승용차', '총_승합차', '총_화물차', '총_특수차'],
+                        title=f"{province} {district if district else ''} 월별 차량 데이터 변화",
+                        labels={'value': '등록 대수', 'variable': '차량 유형'},
+                        height=600
+                    )
+                    st.plotly_chart(fig_trend)
+                else:
+                    st.warning(f"선택한 지역 ({province} {district if district else ''})에 데이터가 없습니다.")
 
         # 두 지역 비교
         elif page == "두 지역 비교":
