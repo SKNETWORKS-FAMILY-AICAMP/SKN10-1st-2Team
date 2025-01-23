@@ -29,6 +29,7 @@ for i in range(len(df)) :
             for val in extracted
         ]
         data += [row[2],row[1],row[0]]
+        
         sql = f"""insert vehicle_registration (total_count,special_count,truck_count
         ,van_count,sedan_count,city,state,registration_date)
         values ({data[0]},{data[1]},{data[2]},{data[3]},{data[4]},'{data[5]}','{data[6]}','{data[7]}')"""

@@ -5,17 +5,7 @@ import pymysql
 st.set_page_config(page_title="브랜드별 FAQ", page_icon="📠")
 st.title("브랜드별 FAQ")
 
-data = {
-    'id': [],
-    'question': [],
-    'answer': []
-}
-# 출력 옵션 변경
-pd.set_option('display.max_colwidth', None)  # 열 너비 제한 해제
-pd.set_option('display.width', 1000)         # 전체 출력 너비를 1000으로 설정
-pd.set_option('display.max_rows', 1000)      # 최대 1000행 출력
-pd.set_option('display.max_columns', 100)    # 최대 100열 출력
-
+# DB 연결
 conn = pymysql.connect( 
     host = 'localhost',
     user = 'car',
@@ -24,8 +14,17 @@ conn = pymysql.connect(
 )
 cur = conn.cursor()
 
-#select해서 faq의 id, 질문, 답변 가져오기기
-sql = """select id,question,answer from faq"""
+# 드롭다운 메뉴 생성
+option = st.selectbox(
+    '기업 선택',
+    ['기아', '현대']
+)
+
+# <br> 태그를 사용해 줄 바꿈
+st.markdown("<br>", unsafe_allow_html=True)
+
+# 옵션에 따라 faq 출력!
+sql = f"""select id,question,answer from faq where company = '{option}'"""
 cur.execute(sql)
 results =  cur.fetchall()
 
