@@ -15,9 +15,9 @@ conn = pymysql.connect(
 cur = conn.cursor()
 
 # 드롭다운 메뉴 생성
-option = st.selectbox(
-    '기업 선택',
-    ['기아', '현대']
+option = st.radio(
+    "기업 선택",
+    ["기아", "현대"]
 )
 
 # <br> 태그를 사용해 줄 바꿈
