@@ -1,5 +1,5 @@
 # Introduction Team (팀 소개)
-### 팀명 : 미정
+### 팀명 : 피크민팀
 <table align=center>
   <tbody>
     <tr>
