@@ -10,7 +10,7 @@ def download_file(download_path="C:/Users/sue01/Downloads"):
                 "profile.default_content_settings.popups": 0,
                 "download.prompt_for_download": False,
                 "directory_upgrade": True,
-                "safebrowsing.enabled": True  # 안전 브라우징 비활성화
+                "safebrowsing.enabled": True  # 안전 브라우징 비활성화 
             }
     options.add_experimental_option("prefs", prefs)
     driver = webdriver.Chrome(options=options)

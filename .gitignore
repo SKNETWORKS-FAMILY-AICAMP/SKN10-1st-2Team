@@ -1,5 +1,5 @@
 # 가상 환경 폴더 제외
 .venv/
 
-# Streamlit 설정 폴더 제외
+# Streamlit 설정 폴더 제외  
 .streamlit/
