@@ -1,3 +1,9 @@
+<table>
+  <tr>
+    <td><img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/SKN_ENCORE.jpg"/></td>
+  </tr>  
+</table>
+
  
 ## Introduction Team (팀 소개)
 > **SK Networks AI CAMP 10기** <br/> **개발기간: 2025.01.20 ~ 2025.01.24** <br/> **팀명: 피크민즈** 
