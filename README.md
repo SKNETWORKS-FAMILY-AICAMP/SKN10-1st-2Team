@@ -1,7 +1,7 @@
 
 # SKN10-1st-2Team
 ## Introduction Team (팀 소개)
-> **SK Networks AI CAMP 9기** <br/> **개발기간: 2025.01.20 ~ 2025.01.24** <br/> **팀명: 피크민즈** 
+> **SK Networks AI CAMP 10기** <br/> **개발기간: 2025.01.20 ~ 2025.01.24** <br/> **팀명: 피크민즈** 
 ### 팀원 소개
 <table align=center>
   <tbody>
@@ -54,9 +54,36 @@
     - 전국 자동차 등록현황과 현대 기아차의 FAQ를 인터넷에서 데이터 크롤링
     - 데이터 정제 후 시각화 플랫폼
 - 프로젝트 목표
+  - 팀원들의 파이썬 문법, SQL, 웹 크롤링, 데이터 수집, 데이터 정제, 데이터를 웹페이지에 시각화까지 2주 커리에 숙련
+
+  - 세부 목표
+    - 파이썬 : 데이터 크롤링, sql 입력, 데이터 시각화 전부 파이썬으로 구현
+    - sql : db와 table을 만들어 크롤링으로 얻은 데이터를 sql에 삽입
+    - 웹 크롤링 : 자동 프로그램으로 엑셀 파일을 다운받고, 웹 페이지에 정보를 크롤링해 sql에 저장
+
+### 주요 산출물
+
+- 데이터 테이블과 분석
   
-    - 팀원들의 웹 크롤링으로 데이터 수집
-    - 데이터 정제 후 sql에 입력
+	- 지역 별 차량 비율을 그래프로 표현해 분석
+   
+- 지역별 데이터 트렌드
+  
+	- 지역별 시간 변화에 따른 차량 데이터 변화
+- 두 지역 비교
+  
+	- 두 지역 차량 등록 대수 비교
+   
+- 데이터 예측
+  
+	- 기존 데이터 기반 미래 차량별 등록 대수 예측
+   
+- FAQ
+  
+	- 기업 FAQ 정보 제공  
+
+<br>
+</br>
 
 ### Tech Stack (기술 스택)
 
@@ -89,6 +116,21 @@
 <br>
 </br>
 
+### 요구사항 명세서
+|요구사항명|요구사항 내용|날짜|
+|---|---|---|
+|DB 수집|자동화 프로그램으로 국토 교통 통계누리 웹 사이트 자동차 등록대수 현황 다운로드|01/22|
+|DB 수집|자동화 프로그램으로 기업 웹 사이트에서 FAQ 데이터 크롤링|01/22|
+|DB 서버 구축|크롤링한 데이터를 자동으로 DB서버에 등록|01/22|
+|Streamlit - 페이지|데이터 테이블과과 분석 : 막대 그래프로 데이터 표현|01/22|
+|Streamlit - 페이지|지역별 데이터 트렌드 : x축을 시간으로 한 지역의 데이터 변화량 표현|01/22|
+|Streamlit - 페이지|두 지역 비교 : 두 지역을 선정해 지역 간 데이터 비교|01/23|
+|Streamlit - 페이지|데이터 예측 : 등록 데이터 기반 학습된 AI 모델을 사용해 미래 변화량 예측|01/23|
+|기업 FAQ|기업 선택후 해당 기업의 FAQ에 접근|01/23|
+|데이터 시각화|설계한 페이지를 streamlit을 사용해 시각화 |01/23|
+<br>
+</br>
+
 ### 수행 결과
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_01.png">
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_02.png">
@@ -96,4 +138,20 @@
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_04.png">
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_05.png">
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_06.png">
+<br>
+</br>
+
+## 개발 과정 이슈 및 해결 과정 
+
+## 팀원 별 느낌 점
+|팀원명|느낌점|
+|---|---|
+|편성민| |
+|김재혁| |
+|경규휘| |
+|배민경| |
+|이유호| |
+|조영훈| |
+
+
 
