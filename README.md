@@ -51,15 +51,18 @@
 ### 프로젝트 명 : 자동차 등록 현황 데이터 시각화
 - 프로젝트 내용
   
-    - 전국 자동차 등록현황과 현대 기아차의 FAQ를 인터넷에서 크롤링
-    - 데이터 정제 후 시각화 플랫폼
+    - 전국 자동차 등록현황과 현대 기아차의 FAQ를 웹 크롤링
+    - 데이터 전처리 후 플랫폼 구현
+
 - 프로젝트 목표
-  - 팀원들의 파이썬 문법, SQL, 웹 크롤링, 데이터 수집, 데이터 정제, 데이터를 웹페이지에 시각화까지 2주 커리에 숙련
+  - 팀원들의 파이썬 , SQL, 웹 크롤링, 데이터 전처리, 깃 등 2주 커리에 숙련
 
   - 세부 목표
     - 파이썬 : 데이터 크롤링, sql 입력, 데이터 시각화 전부 파이썬으로 구현
-    - sql : db와 table을 만들어 크롤링으로 얻은 데이터를 sql에 삽입
-    - 웹 크롤링 : 자동 프로그램으로 엑셀 파일을 다운받고, 웹 페이지에 정보를 크롤링해 sql에 저장
+    - SQL : DB와 table을 만들어 크롤링으로 얻은 데이터를 sql에 삽입
+    - 웹 크롤링 : 자동 프로그램으로 엑셀 파일을 다운, 웹 페이지에서 정보를 크롤링 후 SQL에 저장
+    - 깃 : 팀원 각자의 결과물을 깃을 통해 공유
+      
 
 ### 주요 산출물
 
@@ -138,6 +141,7 @@
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_04.png">
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_05.png">
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_06.png">
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/faq_01.jpg">
 <br>
 </br>
 
