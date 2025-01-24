@@ -14,7 +14,7 @@ def get_data(month, province=None, district=None):
     query = f"""
     SELECT province, district, 
            SUM(passenger) AS 총_승용차, 
-           SUM(bus) AS 총_승합차,
+           SUM(bus) AS 총_승합차, 
            SUM(truck) AS 총_화물차,
            SUM(special) AS 총_특수차
     FROM car_registration
