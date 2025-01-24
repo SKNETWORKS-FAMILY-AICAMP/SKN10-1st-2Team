@@ -88,4 +88,10 @@
 </table>
 
 ### 수행 결과
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_01.png">
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_02.png">
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_03.png">
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_04.png">
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_05.png">
+<img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_06.png">
 
