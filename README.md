@@ -47,6 +47,7 @@
 <br>
 </br>
 
+
 ## Introduction Project (프로젝트 개요)
 ### 프로젝트 명 : 자동차 등록 현황 데이터 시각화
 - 프로젝트 내용
@@ -56,6 +57,8 @@
 
 - 프로젝트 목표
   - 팀원들의 파이썬 , SQL, 웹 크롤링, 데이터 전처리, 깃 - 2주 커리큘럼# SKN10-1st-2Team
+ 
+  - 
 ## Introduction Team (팀 소개)
 > **SK Networks AI CAMP 10기** <br/> **개발기간: 2025.01.20 ~ 2025.01.24** <br/> **팀명: 피크민즈** 
 ### 팀원 소개
@@ -103,6 +106,7 @@
 <br>
 </br>
 
+
 ## Introduction Project (프로젝트 개요)
 ### 프로젝트 명 : 전국 자동차 등록 현황 및 기업 FAQ 조회 시스템
 - 프로젝트 내용
@@ -144,6 +148,7 @@
 <br>
 </br>
 
+
 ### ERD
 
 <table>
@@ -184,6 +189,7 @@
 <br>
 </br>
 
+
 ### WBS
 
 <table>
@@ -208,6 +214,7 @@
 <br>
 </br>
 
+
 ### 수행 결과
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_01.png">
 <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN10-1st-2Team/blob/main/img/%EC%88%98%ED%96%89%EA%B2%B0%EA%B3%BC_02.png">
@@ -219,7 +226,10 @@
 <br>
 </br>
 
+
 ## 개발 과정 이슈 및 해결 과정 
+
+
 
 ## 팀원 별 느낌 점
 |팀원명|느낌점|
